@@ -1,0 +1,156 @@
+.button-active{
+    background: -webkit-linear-gradient(180deg,#1b82c7,#1862ae);
+    border: none;
+}
+
+.over-link:hover {
+    color: #1862ae;
+}
+
+.link-active{
+    color: #1862ae;
+}
+
+.mrt-70 {
+    margin-top: 70px;
+}
+
+.login-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-bottom {
+    display: none;
+}
+
+@media (min-width: 540px) {
+    .logo-top {
+        display: none;
+    }
+    .logo-bottom {
+        display: block;
+    }
+}
+
+.user-perfil__navbar {
+    border-radius: 50%;
+}
+
+.navbar-space{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-perfil{
+    margin-right: 20px;
+}
+
+@media (max-width: 540px) {
+    .logo__navbar {
+        width: 100px;
+    }
+}
+
+
+/* dashboard */
+
+.dashboard_img {
+    width: 100%;
+}
+
+.info-socio-responsive {
+    display: none;
+}
+
+.dashboard-title {
+    color: #1862ae;
+}
+
+.dashboard-title-contact {
+    color: #1862ae;    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 540px) {
+    .img-consultor {
+        width: 100px;
+    }
+
+    .info-socio-responsive {
+        display: block;
+    }
+
+    .info-socio {
+        display: none;
+    }
+    .filter-margin {
+        margin: 10px 0;
+    }
+
+    #carrito {
+        border: 5px solid black;
+    }
+}
+
+/* shop */
+
+@media (max-width: 540px) {
+    .img-prod {
+        width: 100px;
+    }
+
+    .wd-border{
+        border: none !important;
+    }
+}
+
+
+.carrito {
+    background-color: #EBEBEB;
+    position:fixed;
+    width:100%;
+    height:80px;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 540px) {
+    .carrito {
+        display: none;
+    }
+}
+
+.fondo{
+    background-color: #1862ae;
+    color: white;
+    border: none;
+}
+
+.shopping-cart{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.cart-bold{
+    font-weight: 600;
+}
+
+.cerrar {
+    display: flex;
+    justify-content: end;
+    color: #1862ae;
+}
+
+.cerrar > p {
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+}

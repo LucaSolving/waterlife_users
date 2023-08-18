@@ -1,0 +1,45 @@
+@include('../layouts.Assets')
+<div class="container">
+    <div class="row">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h4>MIS PRE-REGISTRO</h4>
+        <p></p>
+        <div class="col-12 pt-3">
+            <table class="table table-bordered text-center table-sm">
+                <thead class="table-light">
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Acciones</th>
+                </thead>
+                <tbody>
+                    @foreach ($registrations as $registration )
+                        <tr>
+                            <td>{{$registration->id}}</td>
+                            <td>{{$registration->firts_name}}</td>
+                            <td>{{$registration->last_name}}</td>
+                            <td>{{$registration->email}}</td>
+                            <td><a href="#"><i class="bi bi-envelope-check-fill"></i></a></td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+            <nav class="">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">«</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">»</a></li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+@include('../layouts.Footer')
