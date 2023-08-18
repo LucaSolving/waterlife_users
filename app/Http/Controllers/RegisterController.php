@@ -206,6 +206,7 @@ class RegisterController extends Controller
 
             Mail::to($data_email)->send(new ConfirmationNewConsultor($data));
         }
+        //aaaa
 
         $request['amp'] = $request['total_points'];
         $request['personal_discount'] = 0;
